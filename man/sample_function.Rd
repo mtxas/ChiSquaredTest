@@ -7,7 +7,10 @@
 sample_function(x = 5)
 }
 \arguments{
-\item{x}{}
+\item{x}{An integer}
+}
+\value{
+An almost random number.
 }
 \description{
 Sample Function
