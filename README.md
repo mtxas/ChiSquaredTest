@@ -1,12 +1,34 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# chisquaredtest
+``` r
+responses <- read_csv("data/responses.csv", show_col_types = FALSE)
+responses
+#> # A tibble: 1,010 × 150
+#>    Music Slow songs or fast song…¹ Dance  Folk Country `Classical music` Musical
+#>    <dbl>                     <dbl> <dbl> <dbl>   <dbl>             <dbl>   <dbl>
+#>  1     5                         3     2     1       2                 2       1
+#>  2     4                         4     2     1       1                 1       2
+#>  3     5                         5     2     2       3                 4       5
+#>  4     5                         3     2     1       1                 1       1
+#>  5     5                         3     4     3       2                 4       3
+#>  6     5                         3     2     3       2                 3       3
+#>  7     5                         5     5     3       1                 2       2
+#>  8     5                         3     3     2       1                 2       2
+#>  9     5                         3     3     1       1                 2       4
+#> 10     5                         3     2     5       2                 2       5
+#> # ℹ 1,000 more rows
+#> # ℹ abbreviated name: ¹​`Slow songs or fast songs`
+#> # ℹ 143 more variables: Pop <dbl>, Rock <dbl>, `Metal or Hardrock` <dbl>,
+#> #   Punk <dbl>, `Hiphop, Rap` <dbl>, `Reggae, Ska` <dbl>, `Swing, Jazz` <dbl>,
+#> #   `Rock n roll` <dbl>, Alternative <dbl>, Latino <dbl>,
+#> #   `Techno, Trance` <dbl>, Opera <dbl>, Movies <dbl>, Horror <dbl>,
+#> #   Thriller <dbl>, Comedy <dbl>, Romantic <dbl>, `Sci-fi` <dbl>, War <dbl>, …
+```
 
-<!-- badges: start -->
-<!-- badges: end -->
+# 1. Überblick
 
-The goal of chisquaredtest is to …
+This package performs Chi-squared tests and visualizes the data.
 
 ## Installation
 
@@ -16,35 +38,8 @@ You can install the development version of chisquaredtest like so:
 # FILL THIS IN! HOW CAN PEOPLE INSTALL YOUR DEV PACKAGE?
 ```
 
-## Example
+# 2. Installation
 
-This is a basic example which shows you how to solve a common problem:
+# 3. Explorative Analyse
 
-``` r
-#library(chisquaredtest)
-## basic example code
-```
-
-What is special about using `README.Rmd` instead of just `README.md`?
-You can include R chunks like so:
-
-``` r
-summary(cars)
-#>      speed           dist       
-#>  Min.   : 4.0   Min.   :  2.00  
-#>  1st Qu.:12.0   1st Qu.: 26.00  
-#>  Median :15.0   Median : 36.00  
-#>  Mean   :15.4   Mean   : 42.98  
-#>  3rd Qu.:19.0   3rd Qu.: 56.00  
-#>  Max.   :25.0   Max.   :120.00
-```
-
-You’ll still need to render `README.Rmd` regularly, to keep `README.md`
-up-to-date. `devtools::build_readme()` is handy for this.
-
-You can also embed plots, for example:
-
-<img src="man/figures/README-pressure-1.png" width="100%" />
-
-In that case, don’t forget to commit and push the resulting figure
-files, so they display on GitHub and CRAN.
+# 4. Induktive Analyse
