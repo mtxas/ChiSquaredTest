@@ -24,3 +24,29 @@ get_data <- function(){
 get_var_names <- function(){
   return(colnames(get_data()))
 }
+
+#' Get Data for Two Variables
+#'
+#' @description
+#' Returns the data for the analysis of two columns in the dataset.
+#'
+#' @param var_1 the column name of the first variable in the dataset.
+#' @param var_2 the column name of the second variable in the dataset.
+#'
+#' @returns A data frame with two columns: "col_1" and "col_2". For i = 1, 2, the column
+#' "col_i" contains entries of the form "Very/Fairly/Not much interested in <var_i>".
+#' These entries correspond to values 5/4-3/2-1 in the original dataset.
+#'
+#' @export
+#'
+#' @examples
+#' my_var_data <- get_var_data("Mathematics", "Biology")
+#' table(my_var_data$col_1, my_var_data$col_2)
+get_var_data <- function(var_1, var_2){
+  get_data() |>
+    filter(!is.na(!!sym(var_1)), !is.na(!!sym(var_2))) |>
+    mutate(col_1 = paste(ifelse(!!sym(var_1) >= 5, "Very", ifelse(!!sym(var_1) >= 3, "Fairly", "Not much")), " interested in \"", var_1, "\"", sep = ""),
+           col_2 = paste(ifelse(!!sym(var_2) >= 5, "Very", ifelse(!!sym(var_2) >= 3, "Fairly", "Not much")), " interested in \"", var_2, "\"", sep = "")) |>
+    select(col_1, col_2)
+}
+
