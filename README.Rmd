@@ -17,6 +17,7 @@ knitr::opts_chunk$set(
 library(readr)
 library(tidyverse)
 library(infer)
+library(chisquaredtest)
 ```
 
 ```{r}
