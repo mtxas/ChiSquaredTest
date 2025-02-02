@@ -1,6 +1,6 @@
 Package: chisquaredtest
 Title: Chi Squared Test
-Version: 0.0.0.9000
+Version: 1.0.0.9000
 Authors@R: 
     person(given = "Matas", family = "Garbaravicius", 
                   email = "matas.garbaravicius@tum.de", 

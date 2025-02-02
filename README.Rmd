@@ -62,7 +62,7 @@ get_var_data("Medicine", "Internet")
 
 ## 1.5 Weitere Funktionen
 
-Weitere wichtige Funktionen werden im Verlauf der Analyse vorgestellt.
+Weitere wichtige Funktionen werden im Verlauf der Analyse vorgestellt. Die Details der Funktionen werden dabei nicht erklärt, aber sie können in der Dokumentation, z.B. mit `?visualize_chi_squared_test`, nachgelesen werden.
 
 ## 1.6 „Alte Experimente und Materialien“ Ordner
 
@@ -73,13 +73,13 @@ Dieser enthält nichts Relevantes für die Analyse, gibt mir jedoch mehr Einsich
 
 ## 2.1 Installation und Aufladung des Pakets
 
-Das Paket kann man installieren durch das folgende Befehl.
+Das Paket kann mit dem folgenden Befehl installiert werden.
 
 ``` r
 remotes::install_gitlab("00000000014BADCE/chisquaredtest", auth_token = "glpat-s_hG6kgpx_CY7Pb4VbXm", host = "gitlab.lrz.de")
 ```
 
-Weiter lässt es sich aufladen mit der folgenden Zeile.
+Weiter lässt es sich mit der folgenden Zeile laden.
 
 ``` r
 library(chisquaredtest)
@@ -88,7 +88,7 @@ library(chisquaredtest)
 
 ## 2.2 Aufladung von anderen Paketen
 
-Um das Paket zu benutzen, muss man noch weitere Pakete aufladen bzw. installieren. Dies geschieht durch folgenden Code.
+Um das Paket zu benutzen, muss man noch weitere Pakete laden bzw. installieren. Dies geschieht durch folgenden Code.
 
 ``` r
 if (!require(tidyverse)) {
@@ -110,36 +110,132 @@ if (!require(infer)) {
 
 # 3. Explorative Analyse
 
+## 3.1 Numerische Beschreibung
+
+Für den Chi-Quadrat Test brauchen wir, dass die Häufigkeiten bei „Very/Fairly/Not much“ groß genug sind, damit sie auch in der Häufigkeistabelle beim Chi-Quadrat-Test nicht zu klein sind. Die Häufigkeiten liefert uns die Funktion `one_var_freq_table`. Durch Aufruf dieser Funktion erhalten wir zusätzlich einen besseren Überblick über unseren Datensatz.
+
 ```{r}
-get_data()
+for(col_name in get_var_names()){
+  print(one_var_freq_table(col_name))
+}
 ```
 
+Diese Darstellung ist natürlich nicht so attraktiv für das Auge. Später werden wir durch grafisch einen netteren Überblick bekommen.
+
+Wir bemerken geringe Zahlen bei z.B. „Gardening“, „Fun with friends“, „Writing" und „Physics“. Wenn wir später mit diesen Kategorien Chi-Quadrat Tests durchführen wollen, müssen wir besonders vorsichtig sein. Dies begründet auch folgendes Beispiel:
 
 ```{r}
-p1 <- var_bar_chart("Mathematics", "Biology")
-p2 <-  var_bar_chart("Mathematics", "Shopping")
-p3 <- var_bar_chart("Mathematics", "Pets")
-combine_bar_charts(p1, p2, p3)
+var_freq_table("Mathematics", "Physics")
 ```
 ```{r}
-p1 <- one_var_pie_chart("Art exhibitions")
-p2 <- one_var_pie_chart("Chemistry")
-p3 <- one_var_pie_chart("Dancing")
+chi_squared_conditions_test("Mathematics", "Physics")$message
+```
+Wir erkennen, dass das Paar „Mathematik mit Physik“ nicht ganz geeignet für ein Chi-Quadrat Test ist. Hier ist eine der Voraussetzungen nicht erfüllt, die in dem Buch *Taschenbuch Der Statistik* von Horst Rinne gennant wird (siehe Quellen ganz unten).
+
+Mit `chi_squared_conditions_test` können wir auch angucken, wie die Häufigkeitstabelle unter der Unabhängigkeitsannahme aussieht. Eine Voraussetzung ist ja, dass kein Eintrag in der Tabelle kleiner als 1 ist. Bei 1.00998 > 1 wird dies knapp hier (siehe unten).
+
+```{r}
+chi_squared_conditions_test("Fun with friends", "Internet")$independent_table
+```
+Da wir ja Zusammenhänge mit Mathematik analysieren möchten, untersuchen wir die entsprechenden Häufigkeitstabellen.
+
+```{r}
+bad_names <- c("Mathematics", "Gardening", "Fun with friends", "Writing", "Physics")
+for(col_name in get_var_names()){
+  if(col_name %in% bad_names == FALSE) {
+    print(var_freq_table("Mathematics", col_name))
+  }
+}
+```
+
+Hier erkennen wir wieder schlechte Paare wie z.B. „Internet mit Mathematik“. Da ist ein Eintrag sogar nur Eins! Weiter entstehen Probleme mit „Celebrities“ und „Law“. Allerdings können wir die „schlechte Kategorien“ noch so ausfiltrieren:
+
+```{r}
+bad_names <- c("Mathematics")
+for(col_name in get_var_names()){
+  if(col_name != "Mathematics"){
+    if(chi_squared_conditions_test("Mathematics", col_name)$verdict == FALSE){
+      bad_names <- c(bad_names, col_name)
+    }
+  }
+}
+bad_names
+```
+Wenn man möchte, kann natürlich die Häufigkeiten nicht berücksichtigen und trotzdem Tests später auch mit den `bad_names` Tests durchführen, aber es ist natürlich empfohlen, mit `chi_squared_conditions_test` immer zu überprüfen, ob die Voraussetzungen für einen Test zwischen zwei Variablen erfüllt sind, denn sonst kann der Test (irgendwelche, aber) falsche Ergebnisse liefern.
+
+## 3.2 Grafische Beschreibung
+
+Als eine passende Diagrammart, um die Verteilung von Häufigkeiten zu veranschaulichen, bietet sich ein Kreisdiagramm an. Nun möchten wir damit versuchen einen Überblick über den Datensatz zu bekommen, der netter für das Auge ist, und den der Nutzer für seine persönliche Analysen eventuell verwenden könnte. Um nicht wieder zu viel Platz zu verbrauchen, betrachtet wir diesmal nur 3 andere Variablen, die uns gefallen haben.
+
+```{r}
+p1 <- one_var_pie_chart("Dancing")
+p2 <- one_var_pie_chart("Biology")
+p3 <- one_var_pie_chart("Politics")
 combine_pie_charts(p1, p2, p3)
 ```
+Für die Untersuchung von Zusammenhängen ist dies aber nicht die beste Option. Deshalb wurde die Funktion `var_bar_chart` entwickelt.
+
+```{r}
+b1 <- var_bar_chart("Mathematics", "Biology")
+b2 <- var_bar_chart("Mathematics", "Dancing")
+b3 <- var_bar_chart("Mathematics", "Politics")
+combine_bar_charts(b1, b2, b3)
+```
+## 3.3 Kleine Diskussion der Ergebnisse
+
+Hier „wackelt“ es am meisten bei „Politics“ und am wenigsten bei „Dancing“. Es lässt sich folgende Reihenfolge vermuten (absteigende Abhängigkeit mit Mathematik) Politik-Biologie-Tanzen. Dies überprüfen wir weiter bei der induktiven Analyse.
 
 
 # 4. Induktive Analyse
+
+Was `visualize_chi_squared_test` eigentlich macht, kann man gut in der Dokumentation mit `?visualize_chi_squared_test` nachlesen. Wir fügen hier hinzu den Teil „Description“:
+
+### Description
+
+This function conducts a Chi-squared test on the variables var_1 and var_2. It does so by displaying two generated null distributions: one using a theoretical approximation (shown by the continuous line) and another using resampling methods (shown by the bars). Finally, it draws a vertical red line, representing the observed statistic of the test.
+
+## 4.1 Durchführung der Tests
+
+Wir benutzen natürlich `visualize_chi_squared_test` und können noch zusätzliche Infos (unter anderem den p-Wert) mit `chi_squared_test` erhalten.
 
 ```{r}
 visualize_chi_squared_test("Mathematics", "Biology")
 ```
 ```{r}
-visualize_chi_squared_test("Pets", "Cars")
+chi_squared_test("Mathematics", "Biology")
+```
+Hier erhalten wir einen Fehler 1. Art von rund 9 Prozent. Wir können fast sicher sein, dass die Variablen abhängig sind, doch nicht super, super sicher (wie bei Politik, siehe unten). 
+
+```{r}
+visualize_chi_squared_test("Mathematics", "Dancing")
 ```
 ```{r}
-visualize_chi_squared_test("Mathematics", "Physics")
+chi_squared_test("Mathematics", "Dancing")
 ```
+
+Dies war ein Beispiel, wo man sogar vermutet, dass die Variablen vielleicht unabhängig sind.
+
+```{r}
+visualize_chi_squared_test("Mathematics", "Politics")
+```
+```{r}
+chi_squared_test("Mathematics", "Politics")
+```
+Hier können wir selbstbewusst sagen, dass die Variablen abhängig sind.
+
+## 4.2 Bonus: Finde die „am meisten abhängigen/unabhängigen Variablen"
+
+Die Rechnung mit `var_extreme_chisq_stat_vals` kann bis zu 30 Sekunden dauern.
+
+```{r}
+var_extreme_chisq_stat_vals("Mathematics", M = 5, biggest_chisq_vals = FALSE)
+```
+
+```{r}
+var_extreme_chisq_stat_vals("Mathematics", M = 32, biggest_chisq_vals = TRUE)
+```
+
+Wichtige Bemerkung („warum gibt es nur 24 und nicht 32 Zeilen?“): es werden Tests ausfiltriert, bei denen die Voraussetzungen für den Chi-Quadrat Test nicht erfüllt sind.
 
 # Quellen
 
