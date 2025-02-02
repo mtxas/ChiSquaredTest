@@ -21,7 +21,7 @@ sample_function()
 ```
 
 ``` r
-# p1 <- var_bar_chart("Mathematics", "Biology")
+p1 <- var_bar_chart("Mathematics", "Biology")
 # p2 <-  var_bar_chart("Mathematics", "Shopping")
 # p3 <- var_bar_chart("Mathematics", "Pets")
 # combine_bar_charts(p1, p2, p3)
