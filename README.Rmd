@@ -43,3 +43,14 @@ You can install the development version of chisquaredtest like so:
 
 # 4. Induktive Analyse
 
+```{r}
+visualize_chi_squared_test("Mathematics", "Biology")
+```
+```{r}
+visualize_chi_squared_test("Pets", "Cars")
+```
+```{r}
+visualize_chi_squared_test("Mathematics", "Physics")
+```
+
+
