@@ -76,9 +76,9 @@ get_data()
 #> #   `Active sport` <dbl>, Gardening <dbl>, Celebrities <dbl>, Shopping <dbl>, …
 ```
 
-Nun veranschaulichen wir uns noch kurz, was für Spalten es gibt. (Diese
-anzuschauen könnte für den Nutzer hilfreich sein, um zu wissen, welche
-Möglichkeiten es für seine persönliche Analyse gibt.)
+Nun veranschaulichen wir kurz, welche Spalten es gibt. (Diese zu
+betrachten könnte für den Nutzer hilfreich sein, um zu wissen, welche
+Möglichkeiten er für seine persönliche Analyse hat.)
 
 ``` r
 get_var_names()
@@ -95,21 +95,34 @@ get_var_names()
 #> [31] "Adrenaline sports"      "Pets"
 ```
 
-Weiter soll man mit der Problematik, dass der Datensatz aus einer
-Perspektive eigentlich relativ wenige Einträge hat. Nämlich, wenn wir
-Chi-Quadrat Tests durchführen wollen, müssen die Einträge in der
-Häufigkeitstabelle mindestens eine gewisse Größe haben. Wie man erkennt,
-haben die Befragten ihr Engagement mit den Kategorien von 1 bis 5
-bewertet („Not interested 1-2-3-4-5 Very interested“). Daher wurde die
-Entscheidung getroffen, die Einträge zu umbenennen. Nämlich
-korrespondiert “Very/Fairly/Not much interested in X” mit Zahlen
-5/4-3/2-1 auf der Skala. Dies erkennt man bei den Funktionen
-`get_var_names()` und `get_one_var_data()` die wesentlich bei der
-Analyse verwendet werden.
+Weiterhin soll auf die Problematik eingegangen werden, dass der
+Datensatz aus einer Perspektive betrachtet relativ wenige Einträge
+enthält. Nämlich, wenn wir Chi-Quadrat-Tests durchführen wollen, müssen
+die Einträge in der Häufigkeitstabelle mindestens eine gewisse Größe
+haben. Wie man erkennt, haben die Befragten ihr Engagement mit den
+Kategorien von 1 bis 5 bewertet („Not interested 1-2-3-4-5 Very
+interested“). Daher wurde die Entscheidung getroffen, die Einträge
+umzubenennen. „Very/Fairly/Not much interested in X“ korrespondiert mit
+den Zahlen 5/4-3/2-1 auf der Skala. Dies erkennt man an den Funktionen
+`get_var_data` und `get_one_var_data`, die wesentlich bei der Analyse
+verwendet werden.
 
 ``` r
-?get_var_names
-#> starting httpd help server ... done
+get_var_data("Medicine", "Internet")
+#> # A tibble: 1,001 × 2
+#>    col_1                                 col_2                                
+#>    <chr>                                 <chr>                                
+#>  1 "Fairly interested in \"Medicine\""   "Very interested in \"Internet\""    
+#>  2 "Not much interested in \"Medicine\"" "Fairly interested in \"Internet\""  
+#>  3 "Not much interested in \"Medicine\"" "Fairly interested in \"Internet\""  
+#>  4 "Not much interested in \"Medicine\"" "Fairly interested in \"Internet\""  
+#>  5 "Fairly interested in \"Medicine\""   "Not much interested in \"Internet\""
+#>  6 "Fairly interested in \"Medicine\""   "Fairly interested in \"Internet\""  
+#>  7 "Very interested in \"Medicine\""     "Not much interested in \"Internet\""
+#>  8 "Not much interested in \"Medicine\"" "Very interested in \"Internet\""    
+#>  9 "Not much interested in \"Medicine\"" "Not much interested in \"Internet\""
+#> 10 "Not much interested in \"Medicine\"" "Very interested in \"Internet\""    
+#> # ℹ 991 more rows
 ```
 
 # 2. Installation
@@ -220,4 +233,12 @@ visualize_chi_squared_test("Mathematics", "Physics")
 #> infer currently does not check these for you.
 ```
 
-<img src="man/figures/README-unnamed-chunk-10-1.png" width="100%" />
+<img src="man/figures/README-unnamed-chunk-10-1.png" width="100%" /> \#
+Quellen
+
+<https://www.kaggle.com/datasets/miroslavsabo/young-people-survey?select=columns.csv>
+
+<https://cran.r-project.org/web/packages/infer/vignettes/chi_squared.html>
+
+Rinne, Horst. *Taschenbuch Der Statistik*. 4., vollst. überarb. und erw.
+Aufl. Deutsch, 2008.
