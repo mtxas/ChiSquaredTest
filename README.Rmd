@@ -17,6 +17,7 @@ knitr::opts_chunk$set(
 library(readr)
 library(tidyverse)
 library(infer)
+library(gridExtra)
 remotes::install_gitlab("00000000014BADCE/chisquaredtest", auth_token = "glpat-s_hG6kgpx_CY7Pb4VbXm", host = "gitlab.lrz.de")
 library(chisquaredtest)
 ```
@@ -42,28 +43,28 @@ sample_function()
 
 ```{r}
 p1 <- var_bar_chart("Mathematics", "Biology")
-# p2 <-  var_bar_chart("Mathematics", "Shopping")
-# p3 <- var_bar_chart("Mathematics", "Pets")
-# combine_bar_charts(p1, p2, p3)
+p2 <-  var_bar_chart("Mathematics", "Shopping")
+p3 <- var_bar_chart("Mathematics", "Pets")
+combine_bar_charts(p1, p2, p3)
 ```
 ```{r}
-# p1 <- one_var_pie_chart("Art exhibitions")
-# p2 <- one_var_pie_chart("Chemistry")
-# p3 <- one_var_pie_chart("Dancing")
-# combine_pie_charts(p1, p2, p3)
+p1 <- one_var_pie_chart("Art exhibitions")
+p2 <- one_var_pie_chart("Chemistry")
+p3 <- one_var_pie_chart("Dancing")
+combine_pie_charts(p1, p2, p3)
 ```
 
 
 # 4. Induktive Analyse
 
 ```{r}
-# visualize_chi_squared_test("Mathematics", "Biology")
+visualize_chi_squared_test("Mathematics", "Biology")
 ```
 ```{r}
-# visualize_chi_squared_test("Pets", "Cars")
+visualize_chi_squared_test("Pets", "Cars")
 ```
 ```{r}
-# visualize_chi_squared_test("Mathematics", "Physics")
+visualize_chi_squared_test("Mathematics", "Physics")
 ```
 
 

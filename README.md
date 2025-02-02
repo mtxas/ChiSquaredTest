@@ -22,28 +22,44 @@ sample_function()
 
 ``` r
 p1 <- var_bar_chart("Mathematics", "Biology")
-# p2 <-  var_bar_chart("Mathematics", "Shopping")
-# p3 <- var_bar_chart("Mathematics", "Pets")
-# combine_bar_charts(p1, p2, p3)
+p2 <-  var_bar_chart("Mathematics", "Shopping")
+p3 <- var_bar_chart("Mathematics", "Pets")
+combine_bar_charts(p1, p2, p3)
 ```
 
+<img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />
+
 ``` r
-# p1 <- one_var_pie_chart("Art exhibitions")
-# p2 <- one_var_pie_chart("Chemistry")
-# p3 <- one_var_pie_chart("Dancing")
-# combine_pie_charts(p1, p2, p3)
+p1 <- one_var_pie_chart("Art exhibitions")
+p2 <- one_var_pie_chart("Chemistry")
+p3 <- one_var_pie_chart("Dancing")
+combine_pie_charts(p1, p2, p3)
 ```
+
+<img src="man/figures/README-unnamed-chunk-4-1.png" width="100%" />
 
 # 4. Induktive Analyse
 
 ``` r
-# visualize_chi_squared_test("Mathematics", "Biology")
+visualize_chi_squared_test("Mathematics", "Biology")
+#> Warning: Check to make sure the conditions have been met for the theoretical method.
+#> infer currently does not check these for you.
 ```
 
-``` r
-# visualize_chi_squared_test("Pets", "Cars")
-```
+<img src="man/figures/README-unnamed-chunk-5-1.png" width="100%" />
 
 ``` r
-# visualize_chi_squared_test("Mathematics", "Physics")
+visualize_chi_squared_test("Pets", "Cars")
+#> Warning: Check to make sure the conditions have been met for the theoretical method.
+#> infer currently does not check these for you.
 ```
+
+<img src="man/figures/README-unnamed-chunk-6-1.png" width="100%" />
+
+``` r
+visualize_chi_squared_test("Mathematics", "Physics")
+#> Warning: Check to make sure the conditions have been met for the theoretical method.
+#> infer currently does not check these for you.
+```
+
+<img src="man/figures/README-unnamed-chunk-7-1.png" width="100%" />
