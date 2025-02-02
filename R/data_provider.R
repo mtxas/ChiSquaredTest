@@ -50,3 +50,27 @@ get_var_data <- function(var_1, var_2){
     select(col_1, col_2)
 }
 
+#' Get Data for a Variable
+#'
+#' @description
+#' Returns the data for the analysis of a column in the dataset.
+#'
+#' @param var the column name of the variable in the dataset.
+#'
+#' @returns A data frame with one column: `col`. It contains entries of the form
+#' "Very/Fairly/Not much interested in <column_name_of_variable>". These entries correspond to values 5/4-3/2-1
+#' in the original dataset.
+#'
+#' @export
+#'
+#' @examples
+#' my_var_data <- get_one_var_data("Psychology")
+#' table(my_var_data$col)
+get_one_var_data <- function(var){
+  get_data() |>
+    filter(!is.na(!!sym(var))) |>
+    mutate(col = paste(ifelse(!!sym(var) >= 5, "Very", ifelse(!!sym(var) >= 3, "Fairly", "Not much")), " interested in \"", var, "\"", sep = "")) |>
+    select(col)
+}
+
+

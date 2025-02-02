@@ -3,6 +3,7 @@
 export(chi_squared_conditions_test)
 export(chi_squared_test)
 export(get_data)
+export(get_one_var_data)
 export(get_var_data)
 export(get_var_names)
 export(sample_function)
