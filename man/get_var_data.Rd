@@ -18,6 +18,7 @@ These entries correspond to values 5/4-3/2-1 in the original dataset.
 }
 \description{
 Returns the data for the analysis of two columns in the dataset.
+The returned data excludes NA entries.
 }
 \examples{
 my_var_data <- get_var_data("Mathematics", "Biology")

@@ -16,6 +16,7 @@ in the original dataset.
 }
 \description{
 Returns the data for the analysis of a column in the dataset.
+The returned data excludes NA entries.
 }
 \examples{
 my_var_data <- get_one_var_data("Psychology")

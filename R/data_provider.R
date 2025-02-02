@@ -29,6 +29,7 @@ get_var_names <- function(){
 #'
 #' @description
 #' Returns the data for the analysis of two columns in the dataset.
+#' The returned data excludes NA entries.
 #'
 #' @param var_1 the column name of the first variable in the dataset.
 #' @param var_2 the column name of the second variable in the dataset.
@@ -54,6 +55,7 @@ get_var_data <- function(var_1, var_2){
 #'
 #' @description
 #' Returns the data for the analysis of a column in the dataset.
+#' The returned data excludes NA entries.
 #'
 #' @param var the column name of the variable in the dataset.
 #'
