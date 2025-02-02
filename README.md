@@ -125,6 +125,16 @@ get_var_data("Medicine", "Internet")
 #> # ℹ 991 more rows
 ```
 
+## 1.5 Weitere Funktionen
+
+Weitere wichtige Funktionen werden im Verlauf der Analyse vorgestellt.
+
+## 1.6 „Alte Experimente und Materialien“ Ordner
+
+Dieser enthält nichts Relevantes für die Analyse, gibt mir jedoch mehr
+Einsicht aus älteren persönlichen Experimenten und Materialien zur
+R-Programmierung.
+
 # 2. Installation
 
 ## 2.1 Installation und Aufladung des Pakets
@@ -166,8 +176,6 @@ if (!require(infer)) {
 # 3. Explorative Analyse
 
 ``` r
-sample_function()
-#> [1] 6
 get_data()
 #> # A tibble: 1,010 × 32
 #>    History Psychology Politics Mathematics Physics Internet    PC
@@ -233,8 +241,9 @@ visualize_chi_squared_test("Mathematics", "Physics")
 #> infer currently does not check these for you.
 ```
 
-<img src="man/figures/README-unnamed-chunk-10-1.png" width="100%" /> \#
-Quellen
+<img src="man/figures/README-unnamed-chunk-10-1.png" width="100%" />
+
+# Quellen
 
 <https://www.kaggle.com/datasets/miroslavsabo/young-people-survey?select=columns.csv>
 

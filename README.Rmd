@@ -60,6 +60,13 @@ Weiterhin soll auf die Problematik eingegangen werden, dass der Datensatz aus ei
 get_var_data("Medicine", "Internet")
 ```
 
+## 1.5 Weitere Funktionen
+
+Weitere wichtige Funktionen werden im Verlauf der Analyse vorgestellt.
+
+## 1.6 „Alte Experimente und Materialien“ Ordner
+
+Dieser enthält nichts Relevantes für die Analyse, gibt mir jedoch mehr Einsicht aus älteren persönlichen Experimenten und Materialien zur R-Programmierung.
 
 
 # 2. Installation
@@ -104,7 +111,6 @@ if (!require(infer)) {
 # 3. Explorative Analyse
 
 ```{r}
-sample_function()
 get_data()
 ```
 
@@ -134,6 +140,7 @@ visualize_chi_squared_test("Pets", "Cars")
 ```{r}
 visualize_chi_squared_test("Mathematics", "Physics")
 ```
+
 # Quellen
 
 https://www.kaggle.com/datasets/miroslavsabo/young-people-survey?select=columns.csv
