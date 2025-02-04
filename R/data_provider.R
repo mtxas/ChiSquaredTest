@@ -8,7 +8,7 @@
 #' @examples
 #' get_data()
 get_data <- function(){
-  return(read_csv("data/responses.csv", show_col_types = FALSE) |> select(c((19+12+1):(19+12+32))))
+  return(read_csv(path_package("chisquaredtest", "data", "responses.csv"), show_col_types = FALSE) |> select(c((19+12+1):(19+12+32))))
 }
 
 #' Variable Names
