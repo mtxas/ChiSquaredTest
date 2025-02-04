@@ -174,6 +174,11 @@ if (!require(infer)) {
   install.packages("infer")
   library(infer)
 }
+
+if (!require(fs)) {
+  install.packages("fs")
+  library(fs)
+}
 ```
 
 # 3. Explorative Analyse

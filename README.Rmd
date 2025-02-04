@@ -17,6 +17,7 @@ knitr::opts_chunk$set(
 library(tidyverse)
 library(infer)
 library(gridExtra)
+library(fs)
 remotes::install_gitlab("00000000014BADCE/chisquaredtest", auth_token = "glpat-s_hG6kgpx_CY7Pb4VbXm", host = "gitlab.lrz.de")
 library(chisquaredtest)
 ```
@@ -104,6 +105,11 @@ if (!require(gridExtra)) {
 if (!require(infer)) {
   install.packages("infer")
   library(infer)
+}
+
+if (!require(fs)) {
+  install.packages("fs")
+  library(fs)
 }
 ```
 
