@@ -11,7 +11,7 @@
 #' @examples
 #' one_var_freq_table("Shopping")
 one_var_freq_table <- function(var){
-  table(get_one_var_data(var)$col)
+  knitr::kable(table(get_one_var_data(var)$col))
 }
 
 #' Frequency Table for Two Variables
@@ -29,6 +29,6 @@ one_var_freq_table <- function(var){
 #' var_freq_table("Adrenaline sports", "Cars")
 var_freq_table <- function(var_1, var_2){
   data <- get_var_data(var_1, var_2)
-  table(data$col_1, data$col_2)
+  knitr::kable(table(data$col_1, data$col_2))
 }
 
