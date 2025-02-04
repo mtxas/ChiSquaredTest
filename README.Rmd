@@ -184,6 +184,7 @@ b2 <- var_bar_chart("Mathematics", "Dancing")
 b3 <- var_bar_chart("Mathematics", "Politics")
 combine_bar_charts(b1, b2, b3)
 ```
+
 ## 3.3 Kleine Diskussion der Ergebnisse
 
 Hier „wackelt“ es am meisten bei „Politics“ und am wenigsten bei „Dancing“. Es lässt sich folgende Reihenfolge vermuten (absteigende Abhängigkeit mit Mathematik) Politik-Biologie-Tanzen. Dies überprüfen wir weiter bei der induktiven Analyse.

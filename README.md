@@ -728,8 +728,9 @@ b3 <- var_bar_chart("Mathematics", "Politics")
 combine_bar_charts(b1, b2, b3)
 ```
 
-<img src="man/figures/README-unnamed-chunk-12-1.png" width="100%" /> \##
-3.3 Kleine Diskussion der Ergebnisse
+<img src="man/figures/README-unnamed-chunk-12-1.png" width="100%" />
+
+## 3.3 Kleine Diskussion der Ergebnisse
 
 Hier „wackelt“ es am meisten bei „Politics“ und am wenigsten bei
 „Dancing“. Es lässt sich folgende Reihenfolge vermuten (absteigende
