@@ -192,181 +192,229 @@ for(col_name in get_var_names()){
   print(one_var_freq_table(col_name))
 }
 #> 
-#>   Fairly interested in "History" Not much interested in "History" 
-#>                              493                              309 
-#>     Very interested in "History" 
-#>                              206 
 #> 
-#>   Fairly interested in "Psychology" Not much interested in "Psychology" 
-#>                                 494                                 338 
-#>     Very interested in "Psychology" 
-#>                                 173 
+#> |Var1                             | Freq|
+#> |:--------------------------------|----:|
+#> |Fairly interested in "History"   |  493|
+#> |Not much interested in "History" |  309|
+#> |Very interested in "History"     |  206|
 #> 
-#>   Fairly interested in "Politics" Not much interested in "Politics" 
-#>                               390                               513 
-#>     Very interested in "Politics" 
-#>                               106 
 #> 
-#>   Fairly interested in "Mathematics" Not much interested in "Mathematics" 
-#>                                  319                                  589 
-#>     Very interested in "Mathematics" 
-#>                                   99 
+#> |Var1                                | Freq|
+#> |:-----------------------------------|----:|
+#> |Fairly interested in "Psychology"   |  494|
+#> |Not much interested in "Psychology" |  338|
+#> |Very interested in "Psychology"     |  173|
 #> 
-#>   Fairly interested in "Physics" Not much interested in "Physics" 
-#>                              252                              698 
-#>     Very interested in "Physics" 
-#>                               57 
 #> 
-#>   Fairly interested in "Internet" Not much interested in "Internet" 
-#>                               496                                44 
-#>     Very interested in "Internet" 
-#>                               466 
+#> |Var1                              | Freq|
+#> |:---------------------------------|----:|
+#> |Fairly interested in "Politics"   |  390|
+#> |Not much interested in "Politics" |  513|
+#> |Very interested in "Politics"     |  106|
 #> 
-#>   Fairly interested in "PC" Not much interested in "PC" 
-#>                         457                         343 
-#>     Very interested in "PC" 
-#>                         204 
 #> 
-#>   Fairly interested in "Economy Management" 
-#>                                         375 
-#> Not much interested in "Economy Management" 
-#>                                         505 
-#>     Very interested in "Economy Management" 
-#>                                         125 
+#> |Var1                                 | Freq|
+#> |:------------------------------------|----:|
+#> |Fairly interested in "Mathematics"   |  319|
+#> |Not much interested in "Mathematics" |  589|
+#> |Very interested in "Mathematics"     |   99|
 #> 
-#>   Fairly interested in "Biology" Not much interested in "Biology" 
-#>                              319                              526 
-#>     Very interested in "Biology" 
-#>                              159 
 #> 
-#>   Fairly interested in "Chemistry" Not much interested in "Chemistry" 
-#>                                187                                696 
-#>     Very interested in "Chemistry" 
-#>                                117 
+#> |Var1                             | Freq|
+#> |:--------------------------------|----:|
+#> |Fairly interested in "Physics"   |  252|
+#> |Not much interested in "Physics" |  698|
+#> |Very interested in "Physics"     |   57|
 #> 
-#>   Fairly interested in "Reading" Not much interested in "Reading" 
-#>                              367                              360 
-#>     Very interested in "Reading" 
-#>                              277 
 #> 
-#>   Fairly interested in "Geography" Not much interested in "Geography" 
-#>                                483                                342 
-#>     Very interested in "Geography" 
-#>                                176 
+#> |Var1                              | Freq|
+#> |:---------------------------------|----:|
+#> |Fairly interested in "Internet"   |  496|
+#> |Not much interested in "Internet" |   44|
+#> |Very interested in "Internet"     |  466|
 #> 
-#>   Fairly interested in "Foreign languages" 
-#>                                        522 
-#> Not much interested in "Foreign languages" 
-#>                                        143 
-#>     Very interested in "Foreign languages" 
-#>                                        340 
 #> 
-#>   Fairly interested in "Medicine" Not much interested in "Medicine" 
-#>                               302                               557 
-#>     Very interested in "Medicine" 
-#>                               146 
+#> |Var1                        | Freq|
+#> |:---------------------------|----:|
+#> |Fairly interested in "PC"   |  457|
+#> |Not much interested in "PC" |  343|
+#> |Very interested in "PC"     |  204|
 #> 
-#>   Fairly interested in "Law" Not much interested in "Law" 
-#>                          297                          641 
-#>     Very interested in "Law" 
-#>                           71 
 #> 
-#>   Fairly interested in "Cars" Not much interested in "Cars" 
-#>                           346                           498 
-#>     Very interested in "Cars" 
-#>                           162 
+#> |Var1                                        | Freq|
+#> |:-------------------------------------------|----:|
+#> |Fairly interested in "Economy Management"   |  375|
+#> |Not much interested in "Economy Management" |  505|
+#> |Very interested in "Economy Management"     |  125|
 #> 
-#>   Fairly interested in "Art exhibitions" 
-#>                                      371 
-#> Not much interested in "Art exhibitions" 
-#>                                      516 
-#>     Very interested in "Art exhibitions" 
-#>                                      117 
 #> 
-#>   Fairly interested in "Religion" Not much interested in "Religion" 
-#>                               305                               613 
-#>     Very interested in "Religion" 
-#>                                89 
+#> |Var1                             | Freq|
+#> |:--------------------------------|----:|
+#> |Fairly interested in "Biology"   |  319|
+#> |Not much interested in "Biology" |  526|
+#> |Very interested in "Biology"     |  159|
 #> 
-#>   Fairly interested in "Countryside, outdoors" 
-#>                                            518 
-#> Not much interested in "Countryside, outdoors" 
-#>                                            173 
-#>     Very interested in "Countryside, outdoors" 
-#>                                            312 
 #> 
-#>   Fairly interested in "Dancing" Not much interested in "Dancing" 
-#>                              286                              571 
-#>     Very interested in "Dancing" 
-#>                              150 
+#> |Var1                               | Freq|
+#> |:----------------------------------|----:|
+#> |Fairly interested in "Chemistry"   |  187|
+#> |Not much interested in "Chemistry" |  696|
+#> |Very interested in "Chemistry"     |  117|
 #> 
-#>   Fairly interested in "Musical instruments" 
-#>                                          226 
-#> Not much interested in "Musical instruments" 
-#>                                          625 
-#>     Very interested in "Musical instruments" 
-#>                                          158 
 #> 
-#>   Fairly interested in "Writing" Not much interested in "Writing" 
-#>                              195                              738 
-#>     Very interested in "Writing" 
-#>                               71 
+#> |Var1                             | Freq|
+#> |:--------------------------------|----:|
+#> |Fairly interested in "Reading"   |  367|
+#> |Not much interested in "Reading" |  360|
+#> |Very interested in "Reading"     |  277|
 #> 
-#>   Fairly interested in "Passive sport" Not much interested in "Passive sport" 
-#>                                    404                                    281 
-#>     Very interested in "Passive sport" 
-#>                                    310 
 #> 
-#>   Fairly interested in "Active sport" Not much interested in "Active sport" 
-#>                                   367                                   321 
-#>     Very interested in "Active sport" 
-#>                                   318 
+#> |Var1                               | Freq|
+#> |:----------------------------------|----:|
+#> |Fairly interested in "Geography"   |  483|
+#> |Not much interested in "Geography" |  342|
+#> |Very interested in "Geography"     |  176|
 #> 
-#>   Fairly interested in "Gardening" Not much interested in "Gardening" 
-#>                                204                                744 
-#>     Very interested in "Gardening" 
-#>                                 55 
 #> 
-#>   Fairly interested in "Celebrities" Not much interested in "Celebrities" 
-#>                                  357                                  577 
-#>     Very interested in "Celebrities" 
-#>                                   74 
+#> |Var1                                       | Freq|
+#> |:------------------------------------------|----:|
+#> |Fairly interested in "Foreign languages"   |  522|
+#> |Not much interested in "Foreign languages" |  143|
+#> |Very interested in "Foreign languages"     |  340|
 #> 
-#>   Fairly interested in "Shopping" Not much interested in "Shopping" 
-#>                               482                               300 
-#>     Very interested in "Shopping" 
-#>                               226 
 #> 
-#>   Fairly interested in "Science and technology" 
-#>                                             499 
-#> Not much interested in "Science and technology" 
-#>                                             295 
-#>     Very interested in "Science and technology" 
-#>                                             210 
+#> |Var1                              | Freq|
+#> |:---------------------------------|----:|
+#> |Fairly interested in "Medicine"   |  302|
+#> |Not much interested in "Medicine" |  557|
+#> |Very interested in "Medicine"     |  146|
 #> 
-#>   Fairly interested in "Theatre" Not much interested in "Theatre" 
-#>                              453                              369 
-#>     Very interested in "Theatre" 
-#>                              180 
 #> 
-#>   Fairly interested in "Fun with friends" 
-#>                                       296 
-#> Not much interested in "Fun with friends" 
-#>                                        23 
-#>     Very interested in "Fun with friends" 
-#>                                       687 
+#> |Var1                         | Freq|
+#> |:----------------------------|----:|
+#> |Fairly interested in "Law"   |  297|
+#> |Not much interested in "Law" |  641|
+#> |Very interested in "Law"     |   71|
 #> 
-#>   Fairly interested in "Adrenaline sports" 
-#>                                        402 
-#> Not much interested in "Adrenaline sports" 
-#>                                        408 
-#>     Very interested in "Adrenaline sports" 
-#>                                        197 
 #> 
-#>   Fairly interested in "Pets" Not much interested in "Pets" 
-#>                           330                           324 
-#>     Very interested in "Pets" 
-#>                           352
+#> |Var1                          | Freq|
+#> |:-----------------------------|----:|
+#> |Fairly interested in "Cars"   |  346|
+#> |Not much interested in "Cars" |  498|
+#> |Very interested in "Cars"     |  162|
+#> 
+#> 
+#> |Var1                                     | Freq|
+#> |:----------------------------------------|----:|
+#> |Fairly interested in "Art exhibitions"   |  371|
+#> |Not much interested in "Art exhibitions" |  516|
+#> |Very interested in "Art exhibitions"     |  117|
+#> 
+#> 
+#> |Var1                              | Freq|
+#> |:---------------------------------|----:|
+#> |Fairly interested in "Religion"   |  305|
+#> |Not much interested in "Religion" |  613|
+#> |Very interested in "Religion"     |   89|
+#> 
+#> 
+#> |Var1                                           | Freq|
+#> |:----------------------------------------------|----:|
+#> |Fairly interested in "Countryside, outdoors"   |  518|
+#> |Not much interested in "Countryside, outdoors" |  173|
+#> |Very interested in "Countryside, outdoors"     |  312|
+#> 
+#> 
+#> |Var1                             | Freq|
+#> |:--------------------------------|----:|
+#> |Fairly interested in "Dancing"   |  286|
+#> |Not much interested in "Dancing" |  571|
+#> |Very interested in "Dancing"     |  150|
+#> 
+#> 
+#> |Var1                                         | Freq|
+#> |:--------------------------------------------|----:|
+#> |Fairly interested in "Musical instruments"   |  226|
+#> |Not much interested in "Musical instruments" |  625|
+#> |Very interested in "Musical instruments"     |  158|
+#> 
+#> 
+#> |Var1                             | Freq|
+#> |:--------------------------------|----:|
+#> |Fairly interested in "Writing"   |  195|
+#> |Not much interested in "Writing" |  738|
+#> |Very interested in "Writing"     |   71|
+#> 
+#> 
+#> |Var1                                   | Freq|
+#> |:--------------------------------------|----:|
+#> |Fairly interested in "Passive sport"   |  404|
+#> |Not much interested in "Passive sport" |  281|
+#> |Very interested in "Passive sport"     |  310|
+#> 
+#> 
+#> |Var1                                  | Freq|
+#> |:-------------------------------------|----:|
+#> |Fairly interested in "Active sport"   |  367|
+#> |Not much interested in "Active sport" |  321|
+#> |Very interested in "Active sport"     |  318|
+#> 
+#> 
+#> |Var1                               | Freq|
+#> |:----------------------------------|----:|
+#> |Fairly interested in "Gardening"   |  204|
+#> |Not much interested in "Gardening" |  744|
+#> |Very interested in "Gardening"     |   55|
+#> 
+#> 
+#> |Var1                                 | Freq|
+#> |:------------------------------------|----:|
+#> |Fairly interested in "Celebrities"   |  357|
+#> |Not much interested in "Celebrities" |  577|
+#> |Very interested in "Celebrities"     |   74|
+#> 
+#> 
+#> |Var1                              | Freq|
+#> |:---------------------------------|----:|
+#> |Fairly interested in "Shopping"   |  482|
+#> |Not much interested in "Shopping" |  300|
+#> |Very interested in "Shopping"     |  226|
+#> 
+#> 
+#> |Var1                                            | Freq|
+#> |:-----------------------------------------------|----:|
+#> |Fairly interested in "Science and technology"   |  499|
+#> |Not much interested in "Science and technology" |  295|
+#> |Very interested in "Science and technology"     |  210|
+#> 
+#> 
+#> |Var1                             | Freq|
+#> |:--------------------------------|----:|
+#> |Fairly interested in "Theatre"   |  453|
+#> |Not much interested in "Theatre" |  369|
+#> |Very interested in "Theatre"     |  180|
+#> 
+#> 
+#> |Var1                                      | Freq|
+#> |:-----------------------------------------|----:|
+#> |Fairly interested in "Fun with friends"   |  296|
+#> |Not much interested in "Fun with friends" |   23|
+#> |Very interested in "Fun with friends"     |  687|
+#> 
+#> 
+#> |Var1                                       | Freq|
+#> |:------------------------------------------|----:|
+#> |Fairly interested in "Adrenaline sports"   |  402|
+#> |Not much interested in "Adrenaline sports" |  408|
+#> |Very interested in "Adrenaline sports"     |  197|
+#> 
+#> 
+#> |Var1                          | Freq|
+#> |:-----------------------------|----:|
+#> |Fairly interested in "Pets"   |  330|
+#> |Not much interested in "Pets" |  324|
+#> |Very interested in "Pets"     |  352|
 ```
 
 Diese Darstellung ist natürlich nicht so attraktiv für das Auge. Später
@@ -379,22 +427,13 @@ sein. Dies begründet auch folgendes Beispiel:
 
 ``` r
 var_freq_table("Mathematics", "Physics")
-#>                                       
-#>                                        Fairly interested in "Physics"
-#>   Fairly interested in "Mathematics"                              143
-#>   Not much interested in "Mathematics"                             67
-#>   Very interested in "Mathematics"                                 41
-#>                                       
-#>                                        Not much interested in "Physics"
-#>   Fairly interested in "Mathematics"                                162
-#>   Not much interested in "Mathematics"                              514
-#>   Very interested in "Mathematics"                                   20
-#>                                       
-#>                                        Very interested in "Physics"
-#>   Fairly interested in "Mathematics"                             14
-#>   Not much interested in "Mathematics"                            6
-#>   Very interested in "Mathematics"                               37
 ```
+
+|  | Fairly interested in “Physics” | Not much interested in “Physics” | Very interested in “Physics” |
+|:---|---:|---:|---:|
+| Fairly interested in “Mathematics” | 143 | 162 | 14 |
+| Not much interested in “Mathematics” | 67 | 514 | 6 |
+| Very interested in “Mathematics” | 41 | 20 | 37 |
 
 ``` r
 chi_squared_conditions_test("Mathematics", "Physics")$message
@@ -442,411 +481,195 @@ for(col_name in get_var_names()){
     print(var_freq_table("Mathematics", col_name))
   }
 }
-#>                                       
-#>                                        Fairly interested in "History"
-#>   Fairly interested in "Mathematics"                              179
-#>   Not much interested in "Mathematics"                            275
-#>   Very interested in "Mathematics"                                 38
-#>                                       
-#>                                        Not much interested in "History"
-#>   Fairly interested in "Mathematics"                                 94
-#>   Not much interested in "Mathematics"                              183
-#>   Very interested in "Mathematics"                                   31
-#>                                       
-#>                                        Very interested in "History"
-#>   Fairly interested in "Mathematics"                             46
-#>   Not much interested in "Mathematics"                          129
-#>   Very interested in "Mathematics"                               30
-#>                                       
-#>                                        Fairly interested in "Psychology"
-#>   Fairly interested in "Mathematics"                                 170
-#>   Not much interested in "Mathematics"                               288
-#>   Very interested in "Mathematics"                                    35
-#>                                       
-#>                                        Not much interested in "Psychology"
-#>   Fairly interested in "Mathematics"                                    95
-#>   Not much interested in "Mathematics"                                 203
-#>   Very interested in "Mathematics"                                      38
-#>                                       
-#>                                        Very interested in "Psychology"
-#>   Fairly interested in "Mathematics"                                53
-#>   Not much interested in "Mathematics"                              94
-#>   Very interested in "Mathematics"                                  26
-#>                                       
-#>                                        Fairly interested in "Politics"
-#>   Fairly interested in "Mathematics"                               155
-#>   Not much interested in "Mathematics"                             195
-#>   Very interested in "Mathematics"                                  39
-#>                                       
-#>                                        Not much interested in "Politics"
-#>   Fairly interested in "Mathematics"                                 136
-#>   Not much interested in "Mathematics"                               330
-#>   Very interested in "Mathematics"                                    46
-#>                                       
-#>                                        Very interested in "Politics"
-#>   Fairly interested in "Mathematics"                              28
-#>   Not much interested in "Mathematics"                            63
-#>   Very interested in "Mathematics"                                14
-#>                                       
-#>                                        Fairly interested in "Internet"
-#>   Fairly interested in "Mathematics"                               160
-#>   Not much interested in "Mathematics"                             305
-#>   Very interested in "Mathematics"                                  29
-#>                                       
-#>                                        Not much interested in "Internet"
-#>   Fairly interested in "Mathematics"                                   8
-#>   Not much interested in "Mathematics"                                35
-#>   Very interested in "Mathematics"                                     1
-#>                                       
-#>                                        Very interested in "Internet"
-#>   Fairly interested in "Mathematics"                             151
-#>   Not much interested in "Mathematics"                           245
-#>   Very interested in "Mathematics"                                69
-#>                                       
-#>                                        Fairly interested in "PC"
-#>   Fairly interested in "Mathematics"                         166
-#>   Not much interested in "Mathematics"                       253
-#>   Very interested in "Mathematics"                            37
-#>                                       
-#>                                        Not much interested in "PC"
-#>   Fairly interested in "Mathematics"                            81
-#>   Not much interested in "Mathematics"                         246
-#>   Very interested in "Mathematics"                              15
-#>                                       
-#>                                        Very interested in "PC"
-#>   Fairly interested in "Mathematics"                        71
-#>   Not much interested in "Mathematics"                      85
-#>   Very interested in "Mathematics"                          47
-#>                                       
-#>                                        Fairly interested in "Economy Management"
-#>   Fairly interested in "Mathematics"                                         128
-#>   Not much interested in "Mathematics"                                       209
-#>   Very interested in "Mathematics"                                            36
-#>                                       
-#>                                        Not much interested in "Economy Management"
-#>   Fairly interested in "Mathematics"                                           132
-#>   Not much interested in "Mathematics"                                         330
-#>   Very interested in "Mathematics"                                              42
-#>                                       
-#>                                        Very interested in "Economy Management"
-#>   Fairly interested in "Mathematics"                                        57
-#>   Not much interested in "Mathematics"                                      47
-#>   Very interested in "Mathematics"                                          21
-#>                                       
-#>                                        Fairly interested in "Biology"
-#>   Fairly interested in "Mathematics"                              111
-#>   Not much interested in "Mathematics"                            170
-#>   Very interested in "Mathematics"                                 37
-#>                                       
-#>                                        Not much interested in "Biology"
-#>   Fairly interested in "Mathematics"                                153
-#>   Not much interested in "Mathematics"                              328
-#>   Very interested in "Mathematics"                                   43
-#>                                       
-#>                                        Very interested in "Biology"
-#>   Fairly interested in "Mathematics"                             50
-#>   Not much interested in "Mathematics"                           90
-#>   Very interested in "Mathematics"                               19
-#>                                       
-#>                                        Fairly interested in "Chemistry"
-#>   Fairly interested in "Mathematics"                                 79
-#>   Not much interested in "Mathematics"                               85
-#>   Very interested in "Mathematics"                                   23
-#>                                       
-#>                                        Not much interested in "Chemistry"
-#>   Fairly interested in "Mathematics"                                  203
-#>   Not much interested in "Mathematics"                                438
-#>   Very interested in "Mathematics"                                     52
-#>                                       
-#>                                        Very interested in "Chemistry"
-#>   Fairly interested in "Mathematics"                               35
-#>   Not much interested in "Mathematics"                             59
-#>   Very interested in "Mathematics"                                 23
-#>                                       
-#>                                        Fairly interested in "Reading"
-#>   Fairly interested in "Mathematics"                              125
-#>   Not much interested in "Mathematics"                            212
-#>   Very interested in "Mathematics"                                 29
-#>                                       
-#>                                        Not much interested in "Reading"
-#>   Fairly interested in "Mathematics"                                108
-#>   Not much interested in "Mathematics"                              206
-#>   Very interested in "Mathematics"                                   44
-#>                                       
-#>                                        Very interested in "Reading"
-#>   Fairly interested in "Mathematics"                             84
-#>   Not much interested in "Mathematics"                          167
-#>   Very interested in "Mathematics"                               26
-#>                                       
-#>                                        Fairly interested in "Geography"
-#>   Fairly interested in "Mathematics"                                173
-#>   Not much interested in "Mathematics"                              272
-#>   Very interested in "Mathematics"                                   36
-#>                                       
-#>                                        Not much interested in "Geography"
-#>   Fairly interested in "Mathematics"                                   88
-#>   Not much interested in "Mathematics"                                214
-#>   Very interested in "Mathematics"                                     40
-#>                                       
-#>                                        Very interested in "Geography"
-#>   Fairly interested in "Mathematics"                               56
-#>   Not much interested in "Mathematics"                             97
-#>   Very interested in "Mathematics"                                 22
-#>                                       
-#>                                        Fairly interested in "Foreign languages"
-#>   Fairly interested in "Mathematics"                                        168
-#>   Not much interested in "Mathematics"                                      295
-#>   Very interested in "Mathematics"                                           58
-#>                                       
-#>                                        Not much interested in "Foreign languages"
-#>   Fairly interested in "Mathematics"                                           37
-#>   Not much interested in "Mathematics"                                         89
-#>   Very interested in "Mathematics"                                             17
-#>                                       
-#>                                        Very interested in "Foreign languages"
-#>   Fairly interested in "Mathematics"                                      114
-#>   Not much interested in "Mathematics"                                    201
-#>   Very interested in "Mathematics"                                         24
-#>                                       
-#>                                        Fairly interested in "Medicine"
-#>   Fairly interested in "Mathematics"                               111
-#>   Not much interested in "Mathematics"                             155
-#>   Very interested in "Mathematics"                                  36
-#>                                       
-#>                                        Not much interested in "Medicine"
-#>   Fairly interested in "Mathematics"                                 162
-#>   Not much interested in "Mathematics"                               342
-#>   Very interested in "Mathematics"                                    50
-#>                                       
-#>                                        Very interested in "Medicine"
-#>   Fairly interested in "Mathematics"                              44
-#>   Not much interested in "Mathematics"                            90
-#>   Very interested in "Mathematics"                                12
-#>                                       
-#>                                        Fairly interested in "Law"
-#>   Fairly interested in "Mathematics"                          116
-#>   Not much interested in "Mathematics"                        148
-#>   Very interested in "Mathematics"                             31
-#>                                       
-#>                                        Not much interested in "Law"
-#>   Fairly interested in "Mathematics"                            183
-#>   Not much interested in "Mathematics"                          393
-#>   Very interested in "Mathematics"                               64
-#>                                       
-#>                                        Very interested in "Law"
-#>   Fairly interested in "Mathematics"                         20
-#>   Not much interested in "Mathematics"                       47
-#>   Very interested in "Mathematics"                            4
-#>                                       
-#>                                        Fairly interested in "Cars"
-#>   Fairly interested in "Mathematics"                           119
-#>   Not much interested in "Mathematics"                         189
-#>   Very interested in "Mathematics"                              37
-#>                                       
-#>                                        Not much interested in "Cars"
-#>   Fairly interested in "Mathematics"                             137
-#>   Not much interested in "Mathematics"                           316
-#>   Very interested in "Mathematics"                                44
-#>                                       
-#>                                        Very interested in "Cars"
-#>   Fairly interested in "Mathematics"                          62
-#>   Not much interested in "Mathematics"                        81
-#>   Very interested in "Mathematics"                            18
-#>                                       
-#>                                        Fairly interested in "Art exhibitions"
-#>   Fairly interested in "Mathematics"                                      134
-#>   Not much interested in "Mathematics"                                    204
-#>   Very interested in "Mathematics"                                         32
-#>                                       
-#>                                        Not much interested in "Art exhibitions"
-#>   Fairly interested in "Mathematics"                                        150
-#>   Not much interested in "Mathematics"                                      309
-#>   Very interested in "Mathematics"                                           55
-#>                                       
-#>                                        Very interested in "Art exhibitions"
-#>   Fairly interested in "Mathematics"                                     34
-#>   Not much interested in "Mathematics"                                   71
-#>   Very interested in "Mathematics"                                       12
-#>                                       
-#>                                        Fairly interested in "Religion"
-#>   Fairly interested in "Mathematics"                               115
-#>   Not much interested in "Mathematics"                             155
-#>   Very interested in "Mathematics"                                  33
-#>                                       
-#>                                        Not much interested in "Religion"
-#>   Fairly interested in "Mathematics"                                 177
-#>   Not much interested in "Mathematics"                               384
-#>   Very interested in "Mathematics"                                    51
-#>                                       
-#>                                        Very interested in "Religion"
-#>   Fairly interested in "Mathematics"                              26
-#>   Not much interested in "Mathematics"                            48
-#>   Very interested in "Mathematics"                                15
-#>                                       
-#>                                        Fairly interested in "Countryside, outdoors"
-#>   Fairly interested in "Mathematics"                                            170
-#>   Not much interested in "Mathematics"                                          305
-#>   Very interested in "Mathematics"                                               40
-#>                                       
-#>                                        Not much interested in "Countryside, outdoors"
-#>   Fairly interested in "Mathematics"                                               53
-#>   Not much interested in "Mathematics"                                            101
-#>   Very interested in "Mathematics"                                                 19
-#>                                       
-#>                                        Very interested in "Countryside, outdoors"
-#>   Fairly interested in "Mathematics"                                           95
-#>   Not much interested in "Mathematics"                                        177
-#>   Very interested in "Mathematics"                                             40
-#>                                       
-#>                                        Fairly interested in "Dancing"
-#>   Fairly interested in "Mathematics"                               96
-#>   Not much interested in "Mathematics"                            167
-#>   Very interested in "Mathematics"                                 23
-#>                                       
-#>                                        Not much interested in "Dancing"
-#>   Fairly interested in "Mathematics"                                175
-#>   Not much interested in "Mathematics"                              332
-#>   Very interested in "Mathematics"                                   62
-#>                                       
-#>                                        Very interested in "Dancing"
-#>   Fairly interested in "Mathematics"                             47
-#>   Not much interested in "Mathematics"                           88
-#>   Very interested in "Mathematics"                               14
-#>                                       
-#>                                        Fairly interested in "Musical instruments"
-#>   Fairly interested in "Mathematics"                                           85
-#>   Not much interested in "Mathematics"                                        120
-#>   Very interested in "Mathematics"                                             21
-#>                                       
-#>                                        Not much interested in "Musical instruments"
-#>   Fairly interested in "Mathematics"                                            181
-#>   Not much interested in "Mathematics"                                          385
-#>   Very interested in "Mathematics"                                               56
-#>                                       
-#>                                        Very interested in "Musical instruments"
-#>   Fairly interested in "Mathematics"                                         53
-#>   Not much interested in "Mathematics"                                       83
-#>   Very interested in "Mathematics"                                           22
-#>                                       
-#>                                        Fairly interested in "Passive sport"
-#>   Fairly interested in "Mathematics"                                    129
-#>   Not much interested in "Mathematics"                                  245
-#>   Very interested in "Mathematics"                                       30
-#>                                       
-#>                                        Not much interested in "Passive sport"
-#>   Fairly interested in "Mathematics"                                       84
-#>   Not much interested in "Mathematics"                                    170
-#>   Very interested in "Mathematics"                                         26
-#>                                       
-#>                                        Very interested in "Passive sport"
-#>   Fairly interested in "Mathematics"                                  103
-#>   Not much interested in "Mathematics"                                163
-#>   Very interested in "Mathematics"                                     42
-#>                                       
-#>                                        Fairly interested in "Active sport"
-#>   Fairly interested in "Mathematics"                                   142
-#>   Not much interested in "Mathematics"                                 200
-#>   Very interested in "Mathematics"                                      25
-#>                                       
-#>                                        Not much interested in "Active sport"
-#>   Fairly interested in "Mathematics"                                      87
-#>   Not much interested in "Mathematics"                                   204
-#>   Very interested in "Mathematics"                                        30
-#>                                       
-#>                                        Very interested in "Active sport"
-#>   Fairly interested in "Mathematics"                                  89
-#>   Not much interested in "Mathematics"                               182
-#>   Very interested in "Mathematics"                                    44
-#>                                       
-#>                                        Fairly interested in "Celebrities"
-#>   Fairly interested in "Mathematics"                                  110
-#>   Not much interested in "Mathematics"                                219
-#>   Very interested in "Mathematics"                                     28
-#>                                       
-#>                                        Not much interested in "Celebrities"
-#>   Fairly interested in "Mathematics"                                    188
-#>   Not much interested in "Mathematics"                                  317
-#>   Very interested in "Mathematics"                                       69
-#>                                       
-#>                                        Very interested in "Celebrities"
-#>   Fairly interested in "Mathematics"                                 20
-#>   Not much interested in "Mathematics"                               52
-#>   Very interested in "Mathematics"                                    2
-#>                                       
-#>                                        Fairly interested in "Shopping"
-#>   Fairly interested in "Mathematics"                               161
-#>   Not much interested in "Mathematics"                             278
-#>   Very interested in "Mathematics"                                  41
-#>                                       
-#>                                        Not much interested in "Shopping"
-#>   Fairly interested in "Mathematics"                                 102
-#>   Not much interested in "Mathematics"                               154
-#>   Very interested in "Mathematics"                                    44
-#>                                       
-#>                                        Very interested in "Shopping"
-#>   Fairly interested in "Mathematics"                              56
-#>   Not much interested in "Mathematics"                           155
-#>   Very interested in "Mathematics"                                14
-#>                                       
-#>                                        Fairly interested in "Science and technology"
-#>   Fairly interested in "Mathematics"                                             159
-#>   Not much interested in "Mathematics"                                           295
-#>   Very interested in "Mathematics"                                                42
-#>                                       
-#>                                        Not much interested in "Science and technology"
-#>   Fairly interested in "Mathematics"                                                79
-#>   Not much interested in "Mathematics"                                             201
-#>   Very interested in "Mathematics"                                                  15
-#>                                       
-#>                                        Very interested in "Science and technology"
-#>   Fairly interested in "Mathematics"                                            80
-#>   Not much interested in "Mathematics"                                          89
-#>   Very interested in "Mathematics"                                              41
-#>                                       
-#>                                        Fairly interested in "Theatre"
-#>   Fairly interested in "Mathematics"                              154
-#>   Not much interested in "Mathematics"                            256
-#>   Very interested in "Mathematics"                                 42
-#>                                       
-#>                                        Not much interested in "Theatre"
-#>   Fairly interested in "Mathematics"                                114
-#>   Not much interested in "Mathematics"                              210
-#>   Very interested in "Mathematics"                                   43
-#>                                       
-#>                                        Very interested in "Theatre"
-#>   Fairly interested in "Mathematics"                             49
-#>   Not much interested in "Mathematics"                          118
-#>   Very interested in "Mathematics"                               13
-#>                                       
-#>                                        Fairly interested in "Adrenaline sports"
-#>   Fairly interested in "Mathematics"                                        138
-#>   Not much interested in "Mathematics"                                      224
-#>   Very interested in "Mathematics"                                           39
-#>                                       
-#>                                        Not much interested in "Adrenaline sports"
-#>   Fairly interested in "Mathematics"                                          111
-#>   Not much interested in "Mathematics"                                        261
-#>   Very interested in "Mathematics"                                             36
-#>                                       
-#>                                        Very interested in "Adrenaline sports"
-#>   Fairly interested in "Mathematics"                                       70
-#>   Not much interested in "Mathematics"                                    103
-#>   Very interested in "Mathematics"                                         22
-#>                                       
-#>                                        Fairly interested in "Pets"
-#>   Fairly interested in "Mathematics"                           107
-#>   Not much interested in "Mathematics"                         188
-#>   Very interested in "Mathematics"                              32
-#>                                       
-#>                                        Not much interested in "Pets"
-#>   Fairly interested in "Mathematics"                             108
-#>   Not much interested in "Mathematics"                           184
-#>   Very interested in "Mathematics"                                32
-#>                                       
-#>                                        Very interested in "Pets"
-#>   Fairly interested in "Mathematics"                         103
-#>   Not much interested in "Mathematics"                       214
-#>   Very interested in "Mathematics"                            35
+#> 
+#> 
+#> |                                     | Fairly interested in "History"| Not much interested in "History"| Very interested in "History"|
+#> |:------------------------------------|------------------------------:|--------------------------------:|----------------------------:|
+#> |Fairly interested in "Mathematics"   |                            179|                               94|                           46|
+#> |Not much interested in "Mathematics" |                            275|                              183|                          129|
+#> |Very interested in "Mathematics"     |                             38|                               31|                           30|
+#> 
+#> 
+#> |                                     | Fairly interested in "Psychology"| Not much interested in "Psychology"| Very interested in "Psychology"|
+#> |:------------------------------------|---------------------------------:|-----------------------------------:|-------------------------------:|
+#> |Fairly interested in "Mathematics"   |                               170|                                  95|                              53|
+#> |Not much interested in "Mathematics" |                               288|                                 203|                              94|
+#> |Very interested in "Mathematics"     |                                35|                                  38|                              26|
+#> 
+#> 
+#> |                                     | Fairly interested in "Politics"| Not much interested in "Politics"| Very interested in "Politics"|
+#> |:------------------------------------|-------------------------------:|---------------------------------:|-----------------------------:|
+#> |Fairly interested in "Mathematics"   |                             155|                               136|                            28|
+#> |Not much interested in "Mathematics" |                             195|                               330|                            63|
+#> |Very interested in "Mathematics"     |                              39|                                46|                            14|
+#> 
+#> 
+#> |                                     | Fairly interested in "Internet"| Not much interested in "Internet"| Very interested in "Internet"|
+#> |:------------------------------------|-------------------------------:|---------------------------------:|-----------------------------:|
+#> |Fairly interested in "Mathematics"   |                             160|                                 8|                           151|
+#> |Not much interested in "Mathematics" |                             305|                                35|                           245|
+#> |Very interested in "Mathematics"     |                              29|                                 1|                            69|
+#> 
+#> 
+#> |                                     | Fairly interested in "PC"| Not much interested in "PC"| Very interested in "PC"|
+#> |:------------------------------------|-------------------------:|---------------------------:|-----------------------:|
+#> |Fairly interested in "Mathematics"   |                       166|                          81|                      71|
+#> |Not much interested in "Mathematics" |                       253|                         246|                      85|
+#> |Very interested in "Mathematics"     |                        37|                          15|                      47|
+#> 
+#> 
+#> |                                     | Fairly interested in "Economy Management"| Not much interested in "Economy Management"| Very interested in "Economy Management"|
+#> |:------------------------------------|-----------------------------------------:|-------------------------------------------:|---------------------------------------:|
+#> |Fairly interested in "Mathematics"   |                                       128|                                         132|                                      57|
+#> |Not much interested in "Mathematics" |                                       209|                                         330|                                      47|
+#> |Very interested in "Mathematics"     |                                        36|                                          42|                                      21|
+#> 
+#> 
+#> |                                     | Fairly interested in "Biology"| Not much interested in "Biology"| Very interested in "Biology"|
+#> |:------------------------------------|------------------------------:|--------------------------------:|----------------------------:|
+#> |Fairly interested in "Mathematics"   |                            111|                              153|                           50|
+#> |Not much interested in "Mathematics" |                            170|                              328|                           90|
+#> |Very interested in "Mathematics"     |                             37|                               43|                           19|
+#> 
+#> 
+#> |                                     | Fairly interested in "Chemistry"| Not much interested in "Chemistry"| Very interested in "Chemistry"|
+#> |:------------------------------------|--------------------------------:|----------------------------------:|------------------------------:|
+#> |Fairly interested in "Mathematics"   |                               79|                                203|                             35|
+#> |Not much interested in "Mathematics" |                               85|                                438|                             59|
+#> |Very interested in "Mathematics"     |                               23|                                 52|                             23|
+#> 
+#> 
+#> |                                     | Fairly interested in "Reading"| Not much interested in "Reading"| Very interested in "Reading"|
+#> |:------------------------------------|------------------------------:|--------------------------------:|----------------------------:|
+#> |Fairly interested in "Mathematics"   |                            125|                              108|                           84|
+#> |Not much interested in "Mathematics" |                            212|                              206|                          167|
+#> |Very interested in "Mathematics"     |                             29|                               44|                           26|
+#> 
+#> 
+#> |                                     | Fairly interested in "Geography"| Not much interested in "Geography"| Very interested in "Geography"|
+#> |:------------------------------------|--------------------------------:|----------------------------------:|------------------------------:|
+#> |Fairly interested in "Mathematics"   |                              173|                                 88|                             56|
+#> |Not much interested in "Mathematics" |                              272|                                214|                             97|
+#> |Very interested in "Mathematics"     |                               36|                                 40|                             22|
+#> 
+#> 
+#> |                                     | Fairly interested in "Foreign languages"| Not much interested in "Foreign languages"| Very interested in "Foreign languages"|
+#> |:------------------------------------|----------------------------------------:|------------------------------------------:|--------------------------------------:|
+#> |Fairly interested in "Mathematics"   |                                      168|                                         37|                                    114|
+#> |Not much interested in "Mathematics" |                                      295|                                         89|                                    201|
+#> |Very interested in "Mathematics"     |                                       58|                                         17|                                     24|
+#> 
+#> 
+#> |                                     | Fairly interested in "Medicine"| Not much interested in "Medicine"| Very interested in "Medicine"|
+#> |:------------------------------------|-------------------------------:|---------------------------------:|-----------------------------:|
+#> |Fairly interested in "Mathematics"   |                             111|                               162|                            44|
+#> |Not much interested in "Mathematics" |                             155|                               342|                            90|
+#> |Very interested in "Mathematics"     |                              36|                                50|                            12|
+#> 
+#> 
+#> |                                     | Fairly interested in "Law"| Not much interested in "Law"| Very interested in "Law"|
+#> |:------------------------------------|--------------------------:|----------------------------:|------------------------:|
+#> |Fairly interested in "Mathematics"   |                        116|                          183|                       20|
+#> |Not much interested in "Mathematics" |                        148|                          393|                       47|
+#> |Very interested in "Mathematics"     |                         31|                           64|                        4|
+#> 
+#> 
+#> |                                     | Fairly interested in "Cars"| Not much interested in "Cars"| Very interested in "Cars"|
+#> |:------------------------------------|---------------------------:|-----------------------------:|-------------------------:|
+#> |Fairly interested in "Mathematics"   |                         119|                           137|                        62|
+#> |Not much interested in "Mathematics" |                         189|                           316|                        81|
+#> |Very interested in "Mathematics"     |                          37|                            44|                        18|
+#> 
+#> 
+#> |                                     | Fairly interested in "Art exhibitions"| Not much interested in "Art exhibitions"| Very interested in "Art exhibitions"|
+#> |:------------------------------------|--------------------------------------:|----------------------------------------:|------------------------------------:|
+#> |Fairly interested in "Mathematics"   |                                    134|                                      150|                                   34|
+#> |Not much interested in "Mathematics" |                                    204|                                      309|                                   71|
+#> |Very interested in "Mathematics"     |                                     32|                                       55|                                   12|
+#> 
+#> 
+#> |                                     | Fairly interested in "Religion"| Not much interested in "Religion"| Very interested in "Religion"|
+#> |:------------------------------------|-------------------------------:|---------------------------------:|-----------------------------:|
+#> |Fairly interested in "Mathematics"   |                             115|                               177|                            26|
+#> |Not much interested in "Mathematics" |                             155|                               384|                            48|
+#> |Very interested in "Mathematics"     |                              33|                                51|                            15|
+#> 
+#> 
+#> |                                     | Fairly interested in "Countryside, outdoors"| Not much interested in "Countryside, outdoors"| Very interested in "Countryside, outdoors"|
+#> |:------------------------------------|--------------------------------------------:|----------------------------------------------:|------------------------------------------:|
+#> |Fairly interested in "Mathematics"   |                                          170|                                             53|                                         95|
+#> |Not much interested in "Mathematics" |                                          305|                                            101|                                        177|
+#> |Very interested in "Mathematics"     |                                           40|                                             19|                                         40|
+#> 
+#> 
+#> |                                     | Fairly interested in "Dancing"| Not much interested in "Dancing"| Very interested in "Dancing"|
+#> |:------------------------------------|------------------------------:|--------------------------------:|----------------------------:|
+#> |Fairly interested in "Mathematics"   |                             96|                              175|                           47|
+#> |Not much interested in "Mathematics" |                            167|                              332|                           88|
+#> |Very interested in "Mathematics"     |                             23|                               62|                           14|
+#> 
+#> 
+#> |                                     | Fairly interested in "Musical instruments"| Not much interested in "Musical instruments"| Very interested in "Musical instruments"|
+#> |:------------------------------------|------------------------------------------:|--------------------------------------------:|----------------------------------------:|
+#> |Fairly interested in "Mathematics"   |                                         85|                                          181|                                       53|
+#> |Not much interested in "Mathematics" |                                        120|                                          385|                                       83|
+#> |Very interested in "Mathematics"     |                                         21|                                           56|                                       22|
+#> 
+#> 
+#> |                                     | Fairly interested in "Passive sport"| Not much interested in "Passive sport"| Very interested in "Passive sport"|
+#> |:------------------------------------|------------------------------------:|--------------------------------------:|----------------------------------:|
+#> |Fairly interested in "Mathematics"   |                                  129|                                     84|                                103|
+#> |Not much interested in "Mathematics" |                                  245|                                    170|                                163|
+#> |Very interested in "Mathematics"     |                                   30|                                     26|                                 42|
+#> 
+#> 
+#> |                                     | Fairly interested in "Active sport"| Not much interested in "Active sport"| Very interested in "Active sport"|
+#> |:------------------------------------|-----------------------------------:|-------------------------------------:|---------------------------------:|
+#> |Fairly interested in "Mathematics"   |                                 142|                                    87|                                89|
+#> |Not much interested in "Mathematics" |                                 200|                                   204|                               182|
+#> |Very interested in "Mathematics"     |                                  25|                                    30|                                44|
+#> 
+#> 
+#> |                                     | Fairly interested in "Celebrities"| Not much interested in "Celebrities"| Very interested in "Celebrities"|
+#> |:------------------------------------|----------------------------------:|------------------------------------:|--------------------------------:|
+#> |Fairly interested in "Mathematics"   |                                110|                                  188|                               20|
+#> |Not much interested in "Mathematics" |                                219|                                  317|                               52|
+#> |Very interested in "Mathematics"     |                                 28|                                   69|                                2|
+#> 
+#> 
+#> |                                     | Fairly interested in "Shopping"| Not much interested in "Shopping"| Very interested in "Shopping"|
+#> |:------------------------------------|-------------------------------:|---------------------------------:|-----------------------------:|
+#> |Fairly interested in "Mathematics"   |                             161|                               102|                            56|
+#> |Not much interested in "Mathematics" |                             278|                               154|                           155|
+#> |Very interested in "Mathematics"     |                              41|                                44|                            14|
+#> 
+#> 
+#> |                                     | Fairly interested in "Science and technology"| Not much interested in "Science and technology"| Very interested in "Science and technology"|
+#> |:------------------------------------|---------------------------------------------:|-----------------------------------------------:|-------------------------------------------:|
+#> |Fairly interested in "Mathematics"   |                                           159|                                              79|                                          80|
+#> |Not much interested in "Mathematics" |                                           295|                                             201|                                          89|
+#> |Very interested in "Mathematics"     |                                            42|                                              15|                                          41|
+#> 
+#> 
+#> |                                     | Fairly interested in "Theatre"| Not much interested in "Theatre"| Very interested in "Theatre"|
+#> |:------------------------------------|------------------------------:|--------------------------------:|----------------------------:|
+#> |Fairly interested in "Mathematics"   |                            154|                              114|                           49|
+#> |Not much interested in "Mathematics" |                            256|                              210|                          118|
+#> |Very interested in "Mathematics"     |                             42|                               43|                           13|
+#> 
+#> 
+#> |                                     | Fairly interested in "Adrenaline sports"| Not much interested in "Adrenaline sports"| Very interested in "Adrenaline sports"|
+#> |:------------------------------------|----------------------------------------:|------------------------------------------:|--------------------------------------:|
+#> |Fairly interested in "Mathematics"   |                                      138|                                        111|                                     70|
+#> |Not much interested in "Mathematics" |                                      224|                                        261|                                    103|
+#> |Very interested in "Mathematics"     |                                       39|                                         36|                                     22|
+#> 
+#> 
+#> |                                     | Fairly interested in "Pets"| Not much interested in "Pets"| Very interested in "Pets"|
+#> |:------------------------------------|---------------------------:|-----------------------------:|-------------------------:|
+#> |Fairly interested in "Mathematics"   |                         107|                           108|                       103|
+#> |Not much interested in "Mathematics" |                         188|                           184|                       214|
+#> |Very interested in "Mathematics"     |                          32|                            32|                        35|
 ```
 
 </span>
