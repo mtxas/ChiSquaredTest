@@ -433,6 +433,8 @@ chi_squared_conditions_test("Fun with friends", "Internet")$independent_table
 Da wir ja Zusammenhänge mit Mathematik analysieren möchten, untersuchen
 wir die entsprechenden Häufigkeitstabellen.
 
+<span style="font-size: 10px;">
+
 ``` r
 bad_names <- c("Mathematics", "Gardening", "Fun with friends", "Writing", "Physics")
 for(col_name in get_var_names()){
@@ -847,6 +849,8 @@ for(col_name in get_var_names()){
 #>   Very interested in "Mathematics"                            35
 ```
 
+</span>
+
 Hier erkennen wir wieder schlechte Paare wie z.B. „Internet mit
 Mathematik“. Da ist ein Eintrag sogar nur Eins! Weiter entstehen
 Probleme mit „Celebrities“ und „Law“. Allerdings können wir die
@@ -945,9 +949,10 @@ chi_squared_test("Mathematics", "Biology")
 #> 1      8.18        4  0.0853
 ```
 
-Hier erhalten wir einen Fehler 1. Art von rund 9 Prozent. Wir können
-fast sicher sein, dass die Variablen abhängig sind, doch nicht super,
-super sicher (wie bei Politik, siehe unten).
+Hier erhalten wir einen p-Wert von rund 0.09. Wir können relativ sicher
+sein, dass die Variablen abhängig sind, doch nicht sehr sicher (wie bei
+Politik, siehe unten). Nämlich können wir die Nullhypothese zu einem
+Signifikanzniveau der Größenordnung von 10 Prozent verwerfen
 
 ``` r
 visualize_chi_squared_test("Mathematics", "Dancing")
@@ -965,8 +970,9 @@ chi_squared_test("Mathematics", "Dancing")
 #> 1      2.10        4   0.718
 ```
 
-Dies war ein Beispiel, wo man sogar vermutet, dass die Variablen
-vielleicht unabhängig sind.
+Dies war ein Beispiel, wo es nicht sinnvoll ist, die Nullhypothese zu
+verwerfen, und wo man sogar vermutet (das müsste man danach noch genauer
+untersuchen), dass die Variablen vielleicht unabhängig sind.
 
 ``` r
 visualize_chi_squared_test("Mathematics", "Politics")
@@ -985,6 +991,8 @@ chi_squared_test("Mathematics", "Politics")
 ```
 
 Hier können wir selbstbewusst sagen, dass die Variablen abhängig sind.
+D.h. wir können die Nullhypothese zu einem sehr kleinen
+Signifikanzniveau verwerfen.
 
 ## 4.2 Bonus: Finde die „am meisten abhängigen/unabhängigen Variablen”
 
