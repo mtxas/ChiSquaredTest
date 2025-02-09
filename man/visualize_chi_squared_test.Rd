@@ -19,6 +19,10 @@ This function conducts a Chi-squared test on the variables var_1 and var_2.
 It does so by displaying two generated null distributions: one using a theoretical approximation
 (shown by the continuous line) and another using resampling methods (shown by the bars). Finally,
 it draws a vertical red line, representing the observed statistic of the test.
+
+For resampling, the method "permute" is used, like in https://cran.r-project.org/web/packages/infer/vignettes/chi_squared.html.
+It is described as follows: "The randomization approach approximates the null distribution by permuting the response and explanatory variables,
+so that each person’s educational attainment is matched up with a random income from the sample in order to break up any association between the two."
 }
 \examples{
 visualize_chi_squared_test("Mathematics", "Biology")
