@@ -1,5 +1,8 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
+# 0. Comments
+
+This project was originally developed using the LRZ GitLab. The installation instructions involving GitLab described below may not work for users outside of the Technical University of Munich (TUM).
 
 # 1. Überblick
 
