@@ -4,6 +4,8 @@
 
 This project was originally developed using the LRZ GitLab. The installation instructions involving GitLab described below may not work for users outside of the Technical University of Munich (TUM).
 
+5-minute presentation video (in German; link expires on 24.08.2025): [link](https://tumde-my.sharepoint.com/:v:/g/personal/matas_garbaravicius_tum_de/EZpkkq5bjKFBiR6xtH0geGcB_5P4FtEgmgHHm9lhwpNlvQ)
+
 # 1. Überblick
 
 ## 1.1 Zweck des Pakets
